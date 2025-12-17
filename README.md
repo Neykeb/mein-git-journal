@@ -36,3 +36,17 @@ Du arbeitest an deinem Projekt und machst Commits. Diese Commits werden in deine
 
 Erst wenn du deine Arbeit mit anderen teilen möchtest, stellst du eine Verbindung zum zentralen Server her und schiebst deine Änderungen dorthin ("Push"). Um die Änderungen der anderen zu erhalten, holst du sie dir vom Server ab ("Pull").
 
+## Der Workflow
+
+Frage: Was entspricht in der "Supermarkt-Analogie" dem Einkaufswagen?
+
+*   Dein **Arbeitsverzeichnis** ist der gesamte Supermarkt mit all seinen Regalen.
+*   Die **Staging Area** ist dein Einkaufswagen.
+*   Das **Repository** ist dein Kühlschrank zu Hause.
+
+
+Frage: Welcher Befehl wird verwendet, um einen Schnappschuss des Einkaufswagens zu machen?
+
+Wenn du eine Datei änderst, merkt Git das. Aber nur weil du sie geändert hast, ist sie nicht automatisch für die nächste Speicherung vorgesehen. Du musst Git explizit sagen: "Hey, diese Änderung an dieser Datei ist mir wichtig, bitte bereite sie für den nächsten Schnappschuss vor."
+
+Genau das tut `git add`. Es nimmt die aktuelle Version einer Datei (oder mehrerer Dateien) aus deinem Arbeitsverzeichnis und kopiert sie in die Staging Area.
