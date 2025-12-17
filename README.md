@@ -23,5 +23,16 @@ Dieses Prinzip ist unglaublich mächtig, weil mehrere Personen gleichzeitig an v
 
 Frage: Was ist in einem zentralisierten System (wie einer Bibliothek) der "Single Point of Failure"?
 
+Stell dir eine Bibliothek vor. In der Mitte des Raumes steht ein riesiges Regal – das ist der **zentrale Server**. In diesem Regal befindet sich das *einzige* Originalexemplar der gesamten Projekthistorie.
+
+Wenn du an etwas arbeiten möchtest, gehst du zu diesem Regal und leihst dir eine Kopie der neuesten Version einer Datei aus (ein "Checkout"). Du arbeitest an deiner Kopie an deinem Schreibtisch. Wenn du fertig bist, bringst du die Datei zurück und gibst deine Änderungen ab (ein "Commit"). Deine Änderungen werden direkt auf dem zentralen Server gespeichert.
+
 
 Frage: Wo wird in einem verteilten System (wie Git) die vollständige Projekthistorie gespeichert?
+
+Jetzt stell dir ein anderes System vor. Anstatt einer zentralen Bibliothek gibt es einen Hauptserver, aber jeder Entwickler bekommt bei der ersten Ausleihe nicht nur die neueste Version, sondern eine **vollständige 1:1-Kopie der gesamten Bibliothek** für seinen eigenen Schreibtisch. Jeder Entwickler hat also die komplette Projekthistorie lokal auf seinem eigenen Computer.
+
+Du arbeitest an deinem Projekt und machst Commits. Diese Commits werden in deiner *lokalen* Kopie des Repositories gespeichert. Du kannst Branches erstellen, die History ansehen, Versionen vergleichen – alles blitzschnell und ohne eine Internetverbindung.
+
+Erst wenn du deine Arbeit mit anderen teilen möchtest, stellst du eine Verbindung zum zentralen Server her und schiebst deine Änderungen dorthin ("Push"). Um die Änderungen der anderen zu erhalten, holst du sie dir vom Server ab ("Pull").
+
