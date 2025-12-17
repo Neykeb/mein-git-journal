@@ -19,4 +19,9 @@ Wenn du mit deiner Arbeit auf dem Ast fertig und zufrieden bist, kannst du ihn w
 
 Dieses Prinzip ist unglaublich mächtig, weil mehrere Personen gleichzeitig an verschiedenen "Ästen" (Features, Bugfixes) arbeiten können, ohne sich gegenseitig in die Quere zu kommen.
 
+## Architektur
 
+Frage: Was ist in einem zentralisierten System (wie einer Bibliothek) der "Single Point of Failure"?
+
+
+Frage: Wo wird in einem verteilten System (wie Git) die vollständige Projekthistorie gespeichert?
